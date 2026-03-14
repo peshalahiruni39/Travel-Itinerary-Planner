@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Travel Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plan.html">Plan Trip</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Contact Us</h2>
+            <hr class="mx-auto" style="width: 70px; height: 3px; background: #1a427a; opacity: 1;">
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="card shadow-sm border-0 p-4">
+                    <h4 class="mb-4">Get in Touch</h4>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Your Name:</label>
+                            <input type="text" class="form-control" id="cName" placeholder="John Doe" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Your Email:</label>
+                            <input type="email" class="form-control" id="cEmail" placeholder="name@example.com" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Your Message:</label>
+                            <textarea class="form-control" id="cMessage" rows="5" placeholder="How can we help you?" required></textarea>
+                            <div class="invalid-feedback">Please write a message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="h-100 card shadow-sm border-0 p-2">
+                    <iframe class="rounded h-100 w-100" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.28548021464!2d80.42861066526848!3d8.31223402434199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf4f9935713c1%3A0x63351f7a01b975d9!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1700000000000" 
+                        style="border:0; min-height: 350px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2026 Travel Itinerary Planner | Rajarata University of Sri Lanka</p>
+            <small class="text-muted">H.P. Hiruni Peshala - ASP/2023/156</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

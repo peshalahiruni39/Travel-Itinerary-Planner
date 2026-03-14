@@ -1,0 +1,5 @@
+body { background: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
+.form-control:focus, .form-select:focus { border-color: #1a427a; box-shadow: none; }
+.btn-primary { background-color: #1a427a; border: none; transition: 0.3s; }
+.btn-primary:hover { background-color: #14335e; transform: translateY(-2px); }
+#itineraryDisplay { font-size: 1.1rem; line-height: 1.8; color: #333; }

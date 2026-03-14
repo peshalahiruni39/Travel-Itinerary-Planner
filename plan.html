@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip - Travel Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Travel Planner</a>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="plan.html">Plan Trip</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Plan Your Trip</h2>
+            <hr class="mx-auto" style="width: 80px; height: 3px; background: #1a427a; opacity: 1;">
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm p-4 border-0">
+                    <form id="tripForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Name:</label>
+                                <input type="text" class="form-control" id="uName" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Email:</label>
+                                <input type="email" class="form-control" id="uEmail" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Destination:</label>
+                                <select class="form-select" id="uDest" required>
+                                    <option value="" selected disabled>Select Destination</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Tokyo">Tokyo</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Start Date:</label>
+                                <input type="date" class="form-control" id="sDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">End Date:</label>
+                                <input type="date" class="form-control" id="eDate" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Activities:</label>
+                                <textarea class="form-control" id="uAct" rows="4" placeholder="Your activities..."></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 shadow">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="itinerarySection" class="mt-5 d-none">
+                    <h3 class="fw-bold text-primary mb-3">Your Itinerary</h3>
+                    <div class="card p-4 bg-light border-0 shadow-sm" id="itineraryDisplay">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="mb-0">© 2026 Travel Itinerary Planner | Rajarata University of Sri Lanka</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="plan.js"></script>
+</body>
+</html>
